@@ -14,3 +14,26 @@
  *= require_self
  */
  @import "bootstrap";
+ @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+ body {
+  font-family: 'Josefin Sans', sans-serif;
+ }
+
+ .full-height {
+   height: 100vh;
+   overflow: hidden;
+ }
+
+ input.form-control.sidebar-form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.chat-box {
+  height: 94vh;
+  overflow: scroll;
+}
