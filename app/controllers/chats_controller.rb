@@ -4,6 +4,10 @@ class ChatsController < ApplicationController
     @chat = Chat.new
   end
 
+  def new
+    @chat = Chat.new
+  end
+
   def create
     @chat = Chat.new(chat_params)
 
