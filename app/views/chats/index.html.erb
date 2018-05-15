@@ -9,8 +9,17 @@
     <div class="col-12 col-md-9 bg-light full-height">
       <div class="container-fluid">
         <div class="chat-box py-2">
-          <h4 class="username d-none"></h4>
-          <div class="chat"></div>
+          <h4 class="username d-none mb-3"></h4>
+          <% @chats.each do |chat| %>
+            <div class="col-12">
+              <div class="chat bg-secondary d-inline-block text-left text-white mb-2">
+                <div class="chat-bubble">
+                  <small class="chat-username"><%= chat.username %></small>
+                  <p class="m-0 mt-2 chat-message"><%= chat.message %></p>
+                </div>
+              </div>
+            </div>
+          <% end %>
         </div>
         <div class="chat-text-input">
           <%= form_with(model: @chat, remote: true, format: :json, id: 'chat-form') do |form| %>
@@ -25,7 +34,8 @@
               </div>
             <% end %>
             <div class="field position-relative">
-              <%= form.text_field :message, id: :message, class: "form-control" %>
+              <%= form.text_field :message, id: :message, class: "form-control", required: true, disabled: true %>
+              <%= form.hidden_field :username, id: :username %>
             </div>
           <% end %>
         </div>
