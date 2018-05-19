@@ -34,7 +34,7 @@ PUSHER_CLUSTER: 'your pusher cluster'
 
 Prerequisites
 ------
-A basic knowledge of Ruby and CoffeeScript
+A basic knowledge of Ruby, PostgreSQL and CoffeeScript
 
 
 Built With
