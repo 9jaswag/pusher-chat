@@ -3,6 +3,8 @@ Build a chat app with Ruby on Rails and Pusher Channels
 
 A tutorial to showcase realtime functionality of Pusher Channels in Ruby
 
+[View tutorial](https://pusher.com/tutorials/chat-app-ruby-rails)
+
 
 Getting Started
 ------
